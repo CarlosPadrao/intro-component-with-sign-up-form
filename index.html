@@ -38,15 +38,25 @@
 
             <div class="form">
               <form action="">
-                <input type="name" placeholder="First name" />
-                <input type="name" placeholder="Last name" />
-                <input type="email" placeholder="Email Address" />
-                <input type="password" placeholder="Password" />
 
-                <button>claim your free tiral</button>
-                <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+                <input id="firstName" type="name" placeholder="First name" />
+                  <span class="wrong d-none" id="noFirst">First Name cannot be empty</span>
+
+                <input type="name" id="lastName" placeholder="Last name" />
+                  <span class="wrong d-none" id="noLast">Last Name cannot be empty</span>
+
+                <input type="email" id="email" placeholder="Email Address" />
+                  <span class="wrong d-none" id="noEmail">Looks like this is not an email</span>
+
+                <input type="password" id="password" placeholder="Password" />
+                  <span class="wrong d-none" id="noPassword">Password cannot be empty</span>
+
+                <button type="button">claim your free tiral</button>
+                <p>By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+
               </form>
             </div>
+
           </div>
         </div>
       </div>

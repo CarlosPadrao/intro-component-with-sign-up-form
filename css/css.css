@@ -85,6 +85,26 @@ form input:focus {
     border-color: #2b2b2b;
 }
 
+form input.wrong {
+    background: url('../images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 50%;
+}
+
+form input.wrong:focus {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
+span.wrong {
+    color: hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-weight: 600;
+    text-align: end;
+    margin: 0;
+    margin-top: -17px;
+}
+
 form button {
     background-color: hsl(154, 59%, 51%);
     color: #f7f7f7;
@@ -95,6 +115,12 @@ form button {
     padding: 14px 0 10px;
     border-radius: 6px;
     filter: drop-shadow(0px 3px 0px hsl(154, 56%, 46%));
+    outline: none !important;
+    border: none !important;
+}
+
+form button:hover {
+    opacity: .8;
 }
 
 form p {
@@ -105,11 +131,14 @@ form p {
     margin-bottom: 0;
 }
 
-form p span {
+form p span a {
     color: rgba(226, 21, 21, 0.829);
 }
 
 
+
+
+/* TOP BAR */
 .attribution {
     position: absolute;
     width: 100%;
