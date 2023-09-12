@@ -28,6 +28,12 @@ body {
 .myscreen {
 }
 
+@media (max-width: 500px) {
+    .myscreen {
+        margin-top: 25px;
+    }
+}
+
 .content {
 }
 
@@ -39,12 +45,30 @@ body {
     margin-bottom: 40px;
 }
 
+@media (max-width: 500px) {
+    .content h1 {
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
 .content h2 {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .content h2 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
 }
 
 .try-it {
@@ -54,7 +78,13 @@ body {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 25px;
-    filter: drop-shadow(0px 9px 0px #0000002d);
+    filter: drop-shadow(0px 8px 0px #0000002d);
+}
+
+@media (max-width: 500px) {
+    .try-it {
+        margin-bottom: 20px;
+    }
 }
 
 .try-it span {
@@ -69,6 +99,14 @@ form {
     background-color: #fff;
     padding: 40px 35px;
     border-radius: 10px;
+    filter: drop-shadow(0px 7px 0px #0000002d);
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px 20px;
+        gap: 17px;
+    }
 }
 
 form input {
