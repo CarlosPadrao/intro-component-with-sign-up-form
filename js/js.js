@@ -31,11 +31,15 @@ btn.addEventListener('click', () => {
     }
 
 
-    // Fazer Regex para validação
-    if (!email.value) {
+    // Validação do Email
+    let regex = /\S+@\S+\.\S+/;
+    let validEmail = regex.test(email.value);
+    if ( (!email.value) || (validEmail == false)) {
+        console.log(validEmail);
         email.classList.add('wrong');
         noEmail.classList.remove('d-none');
-    } else if (email.value) {
+    } else if ( (email.value) && (validEmail == true) ) {
+        console.log(validEmail);
         email.classList.remove('wrong');
         noEmail.classList.add('d-none');
     }
@@ -50,8 +54,9 @@ btn.addEventListener('click', () => {
         noPassword.classList.add('d-none');
     }
 
+
     // Sucesso
-    if ( (firstName.value) && (lastName.value) && (email.value) && (password.value) ) {
+    if ( (firstName.value) && (lastName.value) && (email.value) && (validEmail == true) && (password.value) ) {
         dados = {
             FirstName : firstName.value,
             LastName : lastName.value,
